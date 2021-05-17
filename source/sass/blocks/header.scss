@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  min-height: 900px;
+  background-image: url("../img/header-bg-desk.jpg");
+  background-color: #4B5B81;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+.header__name {
+  font-family: Blacker;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 90.8%;
+
+  color: #F2F2F2;
+}

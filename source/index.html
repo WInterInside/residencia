@@ -17,23 +17,13 @@
   <!-- <div class="sprite" style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div> -->
-  <header class="header container">
-    <h1>Residencia</h1>
-    <!-- weather widget start -->
-    <a target="_blank" href="https://nochi.com/weather/madrid-18119">
-      <img src="https://w.bookcdn.com/weather/picture/23_18119_1_20_ecf0f1_250_bdc3c7_9da2a6_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=589&anc_id=26901"
-      alt="booked.net"/>
-    </a><!-- weather widget end -->
-
-
-    <span id="Madrid_z718" style="font-size:36px"></span>
-    <a href="https://time.is/Madrid" id="time_is_link" rel="nofollow" style="font-size:36px">Время</a>
-    <script src="//widget.time.is/t.js"></script>
-    <script>
-    time_is_widget.init({Madrid_z718:{time_format:"hours:minutes"}});
-    </script>
-
-
+  <header class="header">
+    <picture>
+      <source media="(min-width: 1600px)" srcset="img/logo.svg">
+      <source media="(min-width: 768px)" srcset="img/logo.svg">
+      <img class="" src="img/logo.svg" alt="Residencia logotype" width="166" height="42">
+    </picture>
+    <h2 class="header__name">ВНЖ в Испании</h2>
   </header>
   <main class="main"></main>
   <footer class="footer"></footer>
