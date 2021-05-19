@@ -1,21 +1,21 @@
 .bttn {
-  background-color: $white;
+  min-width: 200px;
+  background-color: $red;
   border: none;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   min-height: 40px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 2px;
   text-decoration: none;
   font-weight: normal;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
 
   &:hover {
-    background-color: $red;
-    color: $white;
-    transition: 0.3s;
+    background-color: $white;
+    color: $red;
+    transition: 0.4s;
   }
 }

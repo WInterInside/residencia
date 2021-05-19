@@ -1,11 +1,15 @@
 .header {
   width: 100%;
-  min-height: 900px;
   background-image: url("../img/header-bg-desk.jpg");
   background-color: #4B5B81;
   background-position: top center;
   background-repeat: no-repeat;
   margin-bottom: 50px;
+}
+
+.header__logo {
+  width: 166px;
+  height: 42px;
 }
 
 .header__name {
@@ -23,4 +27,8 @@
 .header__wrapper {
   display: flex;
   padding-top: 30px;
+}
+
+.header__weather {
+  margin-right: 89px;
 }
