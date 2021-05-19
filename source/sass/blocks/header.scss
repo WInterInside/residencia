@@ -9,6 +9,8 @@
 }
 
 .header__name {
+  margin-top: 190px;
+  margin-bottom: 90px;
   font-family: Blacker;
   font-style: normal;
   font-weight: 500;
@@ -16,4 +18,9 @@
   line-height: 90.8%;
 
   color: #F2F2F2;
+}
+
+.header__wrapper {
+  display: flex;
+  padding-top: 30px;
 }
