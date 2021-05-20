@@ -1,8 +1,10 @@
 .navigation {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding-bottom: 138px;
 }
 
 .navigation__list {
@@ -11,55 +13,112 @@
   justify-content: space-around;
   width: 100%;
 
+  @media (max-width: 911px) {
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+  }
+
   @media (max-width: 1400px) {
     flex-direction: column;
     align-items: center;
     margin-left: 120px;
     margin-bottom: -20px;
   }
+
+  @media (max-width: 912px) {
+    display: none;
+  }
+
+  &--closed {
+    @media (min-width: 912px) {
+      display: flex;
+    }
+    display: none;
+  }
+
+  &--opened {
+    display: flex;
+  }
 }
 
 .navigation__item {
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 90.8%;
+  text-align: center;
+  padding: 3px;
 
   color: $white;
-  opacity: 0.6;
   cursor: pointer;
   transition: 0.3s;
 
-  @media (max-width: 1400px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
+  &:active {
+    transition: 0.3s;
+    opacity: 1;
   }
 
   &:hover {
-    opacity: 1;
+    opacity: 0.6;
     transition: 0.3s;
+  }
+
+  @media (max-width: 911px) {
+    &:hover {
+      opacity: 1;
+      background-color: rgba(204,49,43, 1);
+    }
+  }
+
+  @media (min-width: 1391px) {
+    padding: 0;
   }
 }
 
 .navigation__contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 120px;
-  margin-right: 60px;
+  margin-right: 20px;
+
+  @media (max-width: 912px) {
+    margin-left: auto;
+  }
+
+  @media (min-width: 912px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 60px;
+  }
+}
+
+.navigation__call {
+  display: block;
+
+  @media (min-width: 494px) {
+    display: none;
+  }
 }
 
 .navigation__tel {
-  color: $white;
+  display: none;
+
+  @media (min-width: 912px) {
+    display: block;
+    color: $white;
+  }
 }
 
 .navigation__expert {
   margin-bottom: 17px;
 
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -67,6 +126,15 @@
   text-transform: none;
   letter-spacing: -0.02em;
   color: $white;
+
+  @media (max-width: 496px) {
+    display: none;
+  }
+}
+
+.navigation__menu {
+  cursor: pointer;
+  position: relative;
 }
 
 .navigation__line {
@@ -76,9 +144,10 @@
   &--short {
     width: 16px;
     margin-bottom: 10px;
+    margin-left: 16px;
   }
+
   &--long {
     width: 32px;
   }
 }
-

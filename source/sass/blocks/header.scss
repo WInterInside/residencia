@@ -1,34 +1,60 @@
 .header {
+  position: relative;
   width: 100%;
   background-image: url("../img/header-bg-desk.jpg");
-  background-color: #4B5B81;
+  background-color: #4b5b81;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   margin-bottom: 50px;
 }
 
 .header__logo {
-  width: 166px;
-  height: 42px;
+  width: 134px;
+  height: 34px;
+
+  @media (min-width: 496px) {
+    width: 166px;
+    height: 42px;
+  }
 }
 
 .header__name {
-  margin-top: 190px;
-  margin-bottom: 90px;
-  font-family: Blacker;
+  margin-top: 100px;
+  margin-bottom: 65px;
+  font-family: "Blacker";
   font-style: normal;
-  font-weight: 500;
-  font-size: 200px;
+  font-size: 50px;
   line-height: 90.8%;
 
-  color: #F2F2F2;
+  color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    font-size: 100px;
+    margin-top: 227px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: 1600px) {
+    font-weight: 500;
+    font-size: 200px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
 }
 
 .header__wrapper {
   display: flex;
   padding-top: 30px;
+
+  &--widgets {
+    padding-top: 0;
+  }
 }
 
 .header__weather {
-  margin-right: 89px;
+  margin-right: 45px;
+
+  @media (min-width: 1600px) {
+    margin-right: 90px;
+  }
 }
