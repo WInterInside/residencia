@@ -71,10 +71,11 @@
   }
 
   @media (max-width: 911px) {
-    &:hover {
-      opacity: 1;
-      background-color: rgba(204, 49, 43, 0.6);
-    }
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(204, 49, 43, 0.6);
+    margin-bottom: 5px;
   }
 
   @media (min-width: 1391px) {
@@ -138,7 +139,7 @@
 }
 
 .navigation__line {
-  height: 1px;
+  height: 2px;
   background-color: $white;
 
   &--short {
